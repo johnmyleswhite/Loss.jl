@@ -39,7 +39,7 @@ module Loss
   # TODO: Generate export statements?
   for error_f in error_fs
     for aggregation_f in aggregation_fs
-      f_name = symbol(strcat(string(aggregation_f), "_", string(error_f)))
+      f_name = symbol(string(aggregation_f, "_", error_f))
       @eval begin
         function $(f_name){S <: Real, T <: Real}(a::Array{S}, b::Array{T})
           if size(a) != size(b)
