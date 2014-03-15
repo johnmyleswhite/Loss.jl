@@ -15,8 +15,8 @@ product of two ways of classifying loss functions:
 	* Mean
 	* Root Mean
 	* Median
-	* Min
-	* Max
+	* Minimum
+	* Maximum
 
 # To Do
 
